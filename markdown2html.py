@@ -7,8 +7,9 @@ if __name__ == '__main__':
         print("Usage: ./markdown2html.py README.md README.html",
               file=sys.stderr)
         exit(1)
-    if args[1] != 'README.md':
-        print("Missing README.md", file=sys.stderr)
+    if not (args[1].endswith("md")):
+        print("Missing {}".format(args[1].replace(".html", ".md")),
+              file=sys.stderr)
         exit(1)
     else:
         exit(0)
