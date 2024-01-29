@@ -1,0 +1,48 @@
+*,
+*::after,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  min-height: 10rem;
+}
+.box1,
+.box5 {
+  font-size: 5rem;
+}
+.box2,
+.box4 {
+  font-size: 10rem;
+}
+.box3 {
+  font-size: 15rem;
+}
+.box {
+  /* border: 1px solid red; */
+  color: #fff;
+}
+
+.box1 {
+  background-color: rgb(8, 70, 49);
+}
+.box2 {
+  background-color: rgb(15, 35, 35);
+}
+.box3 {
+  background-color: rgb(54, 16, 90);
+}
+.box4 {
+  background-color: rgb(20, 20, 87);
+}
+.box5 {
+  background-color: rgb(94, 25, 25);
+}
