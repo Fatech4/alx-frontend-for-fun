@@ -306,6 +306,14 @@ a:active {
   transition-property: color, background-color;
 }
 
+.button-primary {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+.button-primary:hover {
+  color: var(--color-primary);
+  background: var(--color-white);
+}
 /* Helpers
               ============================= */
 
@@ -900,6 +908,7 @@ form-field-icon {
 }
 /* Form error handling
 ============================= */
+
 /* The following code is used to place the icon in the after pseudo element. Because after and before are not possible in an input, we need to use a span that will be positioned on the right of our input. */
 
 input:not(:placeholder-shown) ~ .form-field-icon::after {
