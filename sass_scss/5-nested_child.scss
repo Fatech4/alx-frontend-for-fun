@@ -1,0 +1,9 @@
+// Task: Assign text colors to elements using nested Sass declarations.
+
+body {
+  color: #3D3D3D;
+
+  .red:first-child {
+    color: #FF0000;
+  }
+}
