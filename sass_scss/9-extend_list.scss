@@ -1,0 +1,21 @@
+/* Define placeholder selector for .info class */
+%info-style {
+  font-size: 12px;
+}
+
+// Extend style for .info class
+.info {
+  @extend %info-style;
+}
+
+// Apply text color to .success class and extend .info style
+.success {
+  @extend %info-style;
+  color: #00FF00;
+}
+
+// Apply text color to .warning class and extend .info style
+.warning {
+  @extend %info-style;
+  color: #FF0000;
+}

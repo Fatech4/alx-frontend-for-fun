@@ -1,0 +1,14 @@
+/* Define a mixin for margin left and right */
+@mixin marginLR($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+// Apply the mixin to body and div tags
+body {
+  @include marginLR(10px, 10px);
+}
+
+div {
+  @include marginLR(15px, 15px);
+}
