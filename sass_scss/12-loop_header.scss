@@ -1,0 +1,10 @@
+/* Define the range of header levels */
+$min-header-level: 1;
+$max-header-level: 5;
+
+// Loop through header levels and assign font sizes
+@for $i from $min-header-level through $max-header-level {
+  h#{$i} {
+    font-size: #{$i}px;
+  }
+}

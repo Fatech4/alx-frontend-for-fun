@@ -1,0 +1,9 @@
+/* Define the number of columns */
+$num-columns: 4;
+
+// Loop through the column numbers and assign widths
+@for $i from 1 through $num-columns {
+  .col-#{$i} {
+    width: percentage(1 / $i);
+  }
+}

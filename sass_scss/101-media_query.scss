@@ -1,0 +1,18 @@
+/* Default font size for h1 tags */
+$h1-font-size: 20px;
+
+// Default font size for h1 tags when screen width is smaller than 320px
+$h1-font-size-small-screen: 14px;
+
+// Define the breakpoint for small screens
+$breakpoint-small: 320px;
+
+// Styles for h1 tags
+h1 {
+  font-size: $h1-font-size;
+
+  // Media query for small screens
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: $h1-font-size-small-screen;
+  }
+}
